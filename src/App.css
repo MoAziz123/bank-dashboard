@@ -1,38 +1,362 @@
-.App {
-  text-align: center;
+@font-face
+{
+    font-family:Express;
+    src:url('../src/assets/fonts/expressway\ rg.ttf')
+}
+body
+{
+    background-color:#dfdfdf;
+}
+.bg-color
+{
+    background-color: darkblue;
+}
+.color{
+    color:white;
+
+}
+.site
+{
+    display:flex;
+    flex-direction: row;
+    height: 100%;
+}
+.side-bar
+{
+    display:flex;
+    flex-direction:column;
+    width:30%;
+    max-width:35%;
+    
+    border:1px solid black;
+    background-color:#0a105e;
+    color:white;
+    
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.side-bar .logo
+{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:1.5em;
+    margin-bottom:2em;
+    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.side-bar .logo text
+{
+    font-size:1.3em;
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.links 
+{
+    display:flex;
+    flex-direction: column;
+    overflow:hidden;
+    margin-bottom:1em;
+    width: 100%;
+    
+    
+
+}
+.links-wrapper
+{
+    position:sticky;
+    top:0px;
+}
+.side-bar
+{
+    position:sticky;
+    top:0px;
 }
 
-.App-link {
-  color: #61dafb;
+.links text
+{
+    font-size:2em;
+    text-transform:uppercase;
+    font-weight: 100;
+    margin-left:.2em;
+}
+.links ul
+{
+    list-style:none;
+}
+.link
+{
+    
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    font-size:1.2em;
+    width:100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.link:hover
+{
+    background-color:white;
+    color:darkblue;
+}
+
+.link .fa
+{
+    width:50px;
+    margin:.5em;
+    justify-self: center;
+    align-self: center;
+}
+
+/***grid***/
+
+.card
+{
+    text-align:center;
+    background-color: #f0f0f0;
+    align-self: center;
+    height:100%;
+    width:30%;
+}
+.card h1
+{
+    margin-top:0;
+}
+.card:not(:last-of-type)
+{
+    border-right:3px solid white;;
+
+}
+h1
+{
+    font-weight:300;
+    color:darkblue;
+    font-size:3em;
+}
+
+.payments
+{
+    grid-area:balance;
+}
+.savings
+{
+    grid-area:savings;
+}
+.goals
+{
+    grid-area:goals;
+}
+
+
+
+.page
+{
+    box-shadow:-4px -1px 16px rgba(silver, 0.4) ;
+    height:50%;
+    width:100%;
+    margin:3em 5em 5em 5em;
+ 
+    padding:2em;
+}
+.page > h1
+{
+    font-weight:600;
+}
+.card-section
+{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+
+    
+}
+.view-div
+{
+    display:flex;
+    justify-content: flex-end;
+    margin-right:1.6em;
+}
+#view-more
+{
+    background-color:#0a105e;
+    color:white;
+    margin:1em;
+    display:flex;
+    flex-direction: row;
+    font-size: 1.3em;
+    align-content: center;
+    border:1px solid #0a105e;
+    justify-content: space-between;
+    padding:.5em;
+    width:6em;
+    
+}
+#view-more text
+{
+    
+    font-weight:600;
+    margin-right:.2em;
+    
+}
+#view-more .fa
+{
+    align-self: center;
+}
+#view-more:hover
+{
+    background-color:white;
+    color:#0a105e;
+    border:1px solid #0a105e;
+    cursor: pointer;
+}
+/****top bar*****/
+.top-bar-wrapper
+{
+    display:flex;
+    width:100%;
+    justify-content: flex-end;
+}
+.top-bar
+{
+    position: absolute;
+    width: 80.2%;
+    display:flex;
+    flex-direction:row;
+    background-color:white;
+    justify-content: space-between;
+    padding:1em 0 1em 0;
+}
+.top-bar .user-img
+{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+.top-bar .user-img text
+{
+    margin:0 .5em 0 .5em;
+
+
+    
+}
+.top-bar .user-img text:last-of-type
+{
+    font-weight:800;
+
+}
+
+.top-bar 
+{
+    color:darkblue;
+    text-align:center;
+    font-family:'Express';
+}
+.top-bar .log-out
+{
+    display:flex;
+    flex-direction: row;
+    align-self:center;
+    justify-self:center;
+    margin-left:1em;
+    margin-right:2em;
+
+}
+.thingy
+{
+    display:none;
+}
+.log-out .fa:hover{
+    cursor:pointer;
+
+}
+.log-out:hover  .thingy
+{
+    display:block;
+    color:silver;
+}
+
+.thingy
+{
+    margin-top:1em;
+    right:0px;
+    position: absolute;
+    list-style:none;
+    width:auto;
+    z-index:5;
+}
+.thingy ul
+{
+    text-align:center;
+    list-style-type: none;
+}
+.thingy ul li
+{
+    background-color: white;
+    word-wrap: wrap;
+    padding:.5em;
+}
+.thingy ul li:not(:last-of-type)
+{
+    border-bottom:1px solid silver;
+
+}
+.thingy ul li:hover
+{
+    color: blue;
+    cursor: pointer;
+}
+
+/***stat section***/
+.stat-section
+{
+    background-color:gainsboro;
+    align-self: center;
+    width:95%;
+    margin:1em;
+    padding:1em;
+
+}
+*
+{
+    font-weight:350;
+}
+.stat
+{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    padding:1em;
+}
+.money-section
+{
+    width:100%;
+    background-color: white;
+    padding:0 1em 1em 1em;
+    margin:1em 0 2em 0;
+}
+.money-col
+{
+    padding:1em;
+    border:1px solid black;
+}
+.money-col h3
+{
+    padding-left:1em;
+    color:#0a105e;
+}
+.stat img
+{
+    height:400px;
+    width:80%;
+    border:1px solid black;
+}
+.money-col p
+{
+    text-align: center;
+    font-size:2em;
+    margin:0;
 }

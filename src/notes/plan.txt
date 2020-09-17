@@ -1,0 +1,16 @@
+//Main Overview
+This is a dashboard project designed to upgrade my skills in UI Design. I've researched
+a few dashboards via pinterest to get a feel for how I should design this one.
+
+//Components
+- card - stores the stat to see (requires chart.js/d3.js)
+- side-bar - stores the nav links, can be elongated 
+- text - stores introduction text to user
+
+//Styles
+typography - 
+//Functions
+- color switch - able to switch between light/dark mode via CSS vars
+- open/close sidebar - switch from eloganted view to icon view in JS
+- on hover, enlarge card
+
