@@ -17,7 +17,7 @@ export default class SideBar extends React.Component{
                 <div className="links-wrapper">
 
                 <div className="links">
-                    <text>Bank</text>
+                    <text>Atlas Bank</text>
                     <ul>
                         <div className="link">
                             <FontAwesome className="fa fa-home"/><li>Overview</li>

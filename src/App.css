@@ -28,7 +28,7 @@ body
     width:30%;
     max-width:35%;
     
-    border:1px solid black;
+    
     background-color:#0a105e;
     color:white;
     
@@ -157,7 +157,7 @@ h1
 {
     box-shadow:-4px -1px 16px rgba(silver, 0.4) ;
     height:50%;
-    width:100%;
+    width:auto;
     margin:3em 5em 5em 5em;
  
     padding:2em;
@@ -223,7 +223,7 @@ h1
 .top-bar
 {
     position: absolute;
-    width: 80.2%;
+    width: 100%;
     display:flex;
     flex-direction:row;
     background-color:white;
@@ -234,6 +234,7 @@ h1
 {
     display:flex;
     flex-direction: row;
+    margin-left:22%;
     align-items: center;
 }
 .top-bar .user-img text
@@ -265,7 +266,11 @@ h1
     margin-right:2em;
 
 }
-.thingy
+.log-out > *
+{
+    margin-right:.5em;
+}
+.overview-list
 {
     display:none;
 }
@@ -273,13 +278,13 @@ h1
     cursor:pointer;
 
 }
-.log-out:hover  .thingy
+.log-out:hover  .overview-list
 {
     display:block;
     color:silver;
 }
 
-.thingy
+.overview-list
 {
     margin-top:1em;
     right:0px;
@@ -288,23 +293,23 @@ h1
     width:auto;
     z-index:5;
 }
-.thingy ul
+.overview-list ul
 {
     text-align:center;
     list-style-type: none;
 }
-.thingy ul li
+.overview-list ul li
 {
     background-color: white;
     word-wrap: wrap;
     padding:.5em;
 }
-.thingy ul li:not(:last-of-type)
+.overview-list ul li:not(:last-of-type)
 {
     border-bottom:1px solid silver;
 
 }
-.thingy ul li:hover
+.overview-list ul li:hover
 {
     color: blue;
     cursor: pointer;
@@ -333,7 +338,7 @@ h1
 }
 .money-section
 {
-    width:100%;
+    width:auto;
     background-color: white;
     padding:0 1em 1em 1em;
     margin:1em 0 2em 0;
@@ -341,7 +346,7 @@ h1
 .money-col
 {
     padding:1em;
-    border:1px solid black;
+    
 }
 .money-col h3
 {
@@ -352,11 +357,180 @@ h1
 {
     height:400px;
     width:80%;
-    border:1px solid black;
+    
 }
 .money-col p
 {
     text-align: center;
     font-size:2em;
     margin:0;
+}
+
+/***payment section***/
+#card-sec
+{
+    margin-right:3em;
+}
+.payment-section
+{
+    
+    width:auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card-list
+{
+    margin:auto;
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+}
+.current-card
+{
+    width: 100%;
+    padding:1em;
+    display:flex;
+    flex-direction: column;
+}
+.current-card-item
+{
+    width:auto;
+    display:flex;
+    flex-direction: column;
+}
+.card-detail-row
+{
+    display:flex;
+    flex-direction: row;
+    margin-top:1em;
+}
+.current-item
+{
+    display:flex;
+    flex-direction: column;
+    font-family:monospace;
+    color:silver;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+.current-item img
+{
+    width:200px;
+
+}
+.current-card-details
+{
+    display:flex;
+    flex-direction: column;
+    color:black;
+    font-size:1.4em;
+}
+.card-item
+{
+    display: flex;
+    flex-direction: row;
+    padding:1em;
+    background-color:white;
+    justify-content: center;
+    align-items: center;
+}
+.card-item:nth-of-type(even)
+{
+    background-color: aliceblue;
+    
+}
+.card-details
+{
+    
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    
+}
+.card-details > text
+{
+    margin-top:1em;
+    font-family: 'Courier New';
+    color:silver;
+    font-size:.8em;
+}
+.ccd-item
+{
+    display:flex;
+    flex-direction: row;
+    
+}
+.ccd-item > text
+{
+    width:200px;
+
+}
+.ccd-item > text:last-of-type{
+    font-family:'Courier New';
+    background-color:ghostwhite;
+    margin-bottom:.1em;
+}
+.ccd-item > text:first-of-type
+{
+    background-color:whitesmoke;
+    color:darkblue;
+    font-weight:400;
+    margin-bottom:.1em;
+}
+.card-item > *
+{
+    margin:1em;
+}
+.card-item > text
+{
+    color:black;
+    font-weight: 400;
+    font-size:1.5em;
+}
+.card-item button
+{
+    background-color: #0a105e;
+    color:white;
+    padding:1em 2em 1em  2em;
+    border:none;
+    height:50%;
+    align-self:center;
+}
+.card-item button:hover
+{
+    background-color: white;
+    color:darkblue;
+    border:1px solid darkblue;
+    cursor: pointer;
+}
+
+/****HISTORY-SECTION****/
+.page-row
+{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+}
+.page-row .money-section
+{
+    
+    width:100%;    
+
+}
+.history-section .card-list .card-item .card-details
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.history-section .card-list .card-item text
+{
+    width:150px;
 }

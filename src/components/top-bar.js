@@ -25,7 +25,7 @@ export default class TopBar extends React.Component
             <div className="log-out">
                 <text>Mo</text>
                 <FontAwesome className="fa fa-chevron-down"/>
-                <div className="thingy">
+                <div className="overview-list">
                 <ul>
                     <li>Home</li>
                     <li>Dashboard</li>
