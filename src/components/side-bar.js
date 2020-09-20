@@ -37,16 +37,16 @@ export default class SideBar extends React.Component{
                     <text>Account</text>
                     <ul>
                         <div className="link">
-                            <FontAwesome className="fa fa-home"/><li>Profile</li>
+                            <FontAwesome className="fa fa-user"/><li>Profile</li>
                         </div>
                         <div className="link">
                             <FontAwesome className="fa fa-address-card"/><li>Privacy</li>
                         </div>
                         <div className="link">
-                            <FontAwesome className="fa fa-lock"/><li>Settings</li>
+                            <FontAwesome className="fa fa-cog"/><li>Settings</li>
                         </div>
                         <div className="link">
-                            <FontAwesome className="fa fa-cog"/><li>Support</li>
+                            <FontAwesome className="fa fa-support"/><li>Support</li>
                         </div>
                     </ul>
                 </div>
@@ -55,3 +55,4 @@ export default class SideBar extends React.Component{
         )
     }
 }
+

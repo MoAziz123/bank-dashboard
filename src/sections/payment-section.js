@@ -38,11 +38,11 @@ export default class PaymentSection extends React.Component
                                 
                            
                             <div className="ccd-item">
-                                    <text>Card</text>
-                                    <text>Barclays</text>
+                                    <text>Sort Code</text>
+                                    <text>54-34-23</text>
                                 </div>
                                 <div className="ccd-item">
-                                    <text>Card Type</text>
+                                    <text></text>
                                     <text>Debit</text>
                                 </div>
                                 <div className="ccd-item">
